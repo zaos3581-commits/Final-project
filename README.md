@@ -4,7 +4,7 @@ the final project thing
 
 ## Theme
 
-(TBA)
+I currently intend to follow the directed stardew valley theme, though I may consider changing it later
 
 ## Goal
 
