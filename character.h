@@ -1,7 +1,9 @@
+#include <string>
+#include <iostream>
+#include <vector>
+using namespace std;
 #ifndef character_h
 #define character_h
-#include<string>
-using namespace std
 
 class character {
 protected:
@@ -9,7 +11,7 @@ protected:
     string location;
 public:
     character();
-    character(string n,stringl);
+    character(string n,string l);
     string getName();
     string getLocation();
 

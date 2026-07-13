@@ -1,21 +1,22 @@
 #include "farmer.h"
 #include<string>
-using namespace std
+#include"character.h"
+using namespace std;
 
 
     character::character(){
 
     };
-    character::character(string n,stringl){
+    character::character(string n,string l){
 
     };
-    character::string getName(){
+    string character::getName(){
 
     };
-    character::string getLocation(){
+    string character::getLocation(){
 
     };
 
-    character::void setLocation(string l){
+    void character::setLocation(string l){
 
     };

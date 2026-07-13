@@ -1,7 +1,8 @@
 #ifndef farmer_h
 #define farmer_h
 #include<string>
-using namespace std
+#include"character.h"
+using namespace std;
 
 class farmer : public character {
 private:

@@ -1,7 +1,12 @@
 #ifndef game_h
 #define game_h
+#include<vector>
 #include<string>
-using namespace std
+#include"villager.h"
+#include"farmer.h"
+#include"character.h"
+
+using namespace std;
 
 class game {
 private:
@@ -15,8 +20,9 @@ public:
 
     void loadchar();
     void displaymenu();
-    int processchoice();
+    int processchoice(int c);
     void handlemove();
+    void beginDialogue();
     void run();
 
 };

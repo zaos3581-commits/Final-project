@@ -1,12 +1,12 @@
 #include "character.h"
 #include<string>
-using namespace std
+using namespace std;
 
 
     character::character(){
 
     };
-    character::character(string n,stringl){
+    character::character(string n,string l){
 
     };
     string character::getName(){

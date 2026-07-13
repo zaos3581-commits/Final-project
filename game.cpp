@@ -1,24 +1,36 @@
-#ifndef game_h
-#define game_h
+
 #include "game.h"
 #include<string>
-using namespace std
+#include"character.h"
+#include"farmer.h"
+#include"villager.h"
+#include<vector>
+#include<iostream>
+#include<fstream>
+using namespace std;
 
-    game::game();
-    game::game(vector<villager> v, farmer p, bool go);
+    game::game(){
 
-    game::loadchar(){
+    }
+    game::game(vector<villager> v, farmer p, bool go){
+
+    }
+
+    void game::loadchar(){
         ifstream inFile("characters.txt");
-        if(inFile.is_open){
+        if(inFile.is_open()){
             string line;
             while(getline(inFile,line)){
                 int delim = line.find(',');
                 string charName = line.substr(0,delim+1);
                 string charloc = line.substr(delim+1, line.length()-charName.length()+1);
+                character(charName,charloc);
             }
             inFile.close();
         }
-
+        else{
+            cerr << "File not found.";
+        }
     }
     void game::displaymenu(){
         cout << "what do 1-3" << endl;
@@ -30,7 +42,7 @@ using namespace std
         if(c==1){
             handlemove();
         }
-        else if(calloc==2){
+        else if(c==2){
             beginDialogue();
         }
         else if(c==3){
@@ -40,14 +52,18 @@ using namespace std
             cout << "bad choice" << endl;
         }
     }
-    void game::handlemove();
+    void game::handlemove(){
+
+    }
+    void game::beginDialogue(){
+
+    }
     void game::run(){
         cout << "start game" << endl;
         int choice =-1;
-        while(choice!=3 || gameover=false){
+        while(choice!=3 || gameovere==false){
             displaymenu();
             cin >> choice;
             processchoice(choice);
-            
         }
     }

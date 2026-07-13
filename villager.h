@@ -1,7 +1,8 @@
 #ifndef villager_h
 #define villager_h
 #include<string>
-using namespace std
+#include"character.h"
+using namespace std;
 
 class villager : public character {
 protected:
