@@ -9,7 +9,7 @@ private:
     int nrg;
 public:
     farmer();
-    farmer(int n);
+    farmer(int n, string na, string l);
 
     int getnrg();
 

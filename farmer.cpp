@@ -1,22 +1,21 @@
 #include "farmer.h"
 #include<string>
 #include"character.h"
+#include<iostream>
 using namespace std;
 
 
-    character::character(){
+    farmer::farmer():character(){
+        nrg = 666;
+    }
+    farmer::farmer(int n,string na, string l):character(na,l){
+        nrg = n;
+    }
 
-    };
-    character::character(string n,string l){
+    int farmer::getnrg(){
+        return nrg;
+    }
 
-    };
-    string character::getName(){
-
-    };
-    string character::getLocation(){
-
-    };
-
-    void character::setLocation(string l){
-
-    };
+    void farmer::setnrg(int n){
+        nrg = n;
+    }

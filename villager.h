@@ -9,10 +9,10 @@ protected:
     int friendship;
 public:
     villager();
-    villager(string f);
-    string getFriend();
+    villager(string n, string l, int f);
+    int getFriend();
 
-    void setFriend(string f);
+    void setFriend(int f);
 
 };
 #endif
