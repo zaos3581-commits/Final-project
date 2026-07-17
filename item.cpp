@@ -2,7 +2,10 @@
 #include"item.h"
 #include<iostream>
 using namespace std;
-
+item::item(){
+    name = "It moves sharply in your hand";
+    value = -200;
+}
 item::item(string n, int v){
 name = n;
 value = v;

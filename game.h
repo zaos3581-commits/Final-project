@@ -13,15 +13,17 @@ private:
     vector<villager> villagers;
     farmer player;
     bool gameovere;
-
+    vector<string> loca;
 public:
     game();
-    game(vector<villager> v, farmer p, bool go);
-
-    void loadchar();
+    game(farmer p, bool go);
+    void addlocation(string n);
+    character loadchar();
     void displaymenu();
-    int processchoice(int c);
+    void processchoice(int c);
     void handlemove();
+    void performAction();
+    void checkList();
     void beginDialogue();
     void run();
 

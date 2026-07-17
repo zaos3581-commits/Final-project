@@ -10,6 +10,7 @@ class item {
     int value;
     string name;
     public:
+    item();
     item(string n, int v);
 
     string getname();

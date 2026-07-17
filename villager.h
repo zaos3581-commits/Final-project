@@ -11,7 +11,7 @@ public:
     villager();
     villager(string n, string l, int f);
     int getFriend();
-
+    void changeFriend(int f);
     void setFriend(int f);
 
 };
